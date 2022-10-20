@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../lodash-4.17.21/package/lodash.min.js"></script>
+</body>
+<script>
+ //_.chunk
+/**
+ * _.chunk将数组（array）拆分成多个 size 长度的区块，并将这些区块组成一个新数组。 
+ * 如果array 无法被分割成全部等长的区块，那么最后剩余的元素将组成一个区块
+*/
+let arr_chunk = ['a', 'b', 'c', 'd'];
+console.log('chunk>>', _.chunk(arr_chunk, 2))
+console.log('chunk>>',_.chunk(arr_chunk, 3))
+     
+//_.compact()
+/**
+ * 创建一个新数组，包含原数组中所有的非假值元素。例如false, null,0, "", undefined, 和 NaN 都是被认为是“假值”。
+*/
+let arr_compact = [0, 1, false, 2, '', 3]
+console.log('cpmpact>>',_.compact(arr_compact))
+
+// _.concat(array,[values])
+/**创建一个新数组，将array与任何数组 或 值连接在一起。*/
+var array = [1];
+var other = _.concat(array, 2, [3], [[4]]);
+ 
+console.log('concat>>>',other);
+// => [1, 2, 3, [4]]
+console.log('concat>>>',array);
+// => [1]
+</script>
+</html>

@@ -1,0 +1,5 @@
+.vscode/*
+.git/*
+
+main.cpp
+in/ts.h
