@@ -35,5 +35,20 @@ console.log('concat>>>',other);
 // => [1, 2, 3, [4]]
 console.log('concat>>>',array);
 // => [1]
+
+var array = [1];
+var other = _.concat()
+// 
+
+/**
+ * _.sortBy(collection,[interatees=[_.identity]])
+*/
+const users = [
+  { 'user': 'fred',   'age': 48 },
+  { 'user': 'barney', 'age': 36 },
+  { 'user': 'fred',   'age': 40 },
+  { 'user': 'barney', 'age': 34 }
+];
+console.log('_.sortBy>>',_.sortBy(users, function(o) { return o.user;}))
 </script>
 </html>
